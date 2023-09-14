@@ -1,0 +1,20 @@
+Nimport tkinter as t
+w=t.Tk()
+we1=t.DoubleVar()
+w.title('BMI計算')
+w.geometry('800x600')
+lbW=t.Label(w,text='體重',font=('Arial',16))
+lbW.grid(row=0,column=0)
+lbW=t.Label(w,text='身高',font=('Arial',16))
+lbW.grid(row=1,column=0)
+lbW=t.Label(w,text='BMI',font=('Arial',16))
+lbW.grid(row=2,column=0)
+
+txtw=t.Entry(w,textvariable=we1,font=('Arial',16))
+we1.get()
+txtw.grid(row=0,column=1)
+txtw=t.Entry(w,textvariable=we1,font=('Arial',16))
+we1.get()
+txtw.grid(row=1,column=1)
+
+w.mainloop()
